@@ -18,7 +18,7 @@ class JenkinsCiCdApplicationTests {
 	public void testGreetingsEndpoint() throws Exception {
 		String name = "Basanta kumar hota";
 
-		name = name.split(" ")[0];
+		//name = name.split(" ")[0];
 
 		mockMvc.perform(MockMvcRequestBuilders.get("/greetings/{name}", name))
 				.andExpect(MockMvcResultMatchers.status().isOk())
